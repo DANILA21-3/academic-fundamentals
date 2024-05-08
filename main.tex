@@ -1,0 +1,108 @@
+\documentclass[fleqn,10pt]{a}
+%\documentclass[acmtog]{acmart}
+\usepackage{color}   
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, 
+    linktoc=all,     
+    linkcolor=blue,  
+}
+\begin{document}
+
+\tableofcontents
+\clearpage
+\section{Measurement}\label{sec:this}
+\subsection{Transform-based watermarking of 3D depth-image-based-rendering images}
+
+Following this ordering of depth cues and their relevance to receiver complexity, our system is based on a three-stage concept that aims to add more and more depth cues at each additional layer:
+A relatively simple first stage, called immersive TV (ImTV), allows for the interactive viewing of large panoramic images and videos, supporting high resolution with brilliant quality as a first important parameter for depth perception. In this system, the visual information is captured by an omnidirectional camera setup and transmitted via a number of digital video broadcast (DVB) channels.
+
+\section{Main steps}
+
+The proposed algorithm is divided into two main steps: 
+Depth propagation: Depth information from each range camera is propagated to every color camera’s image plane. Then, processing techniques including occlusion removal, depth interpolation, and disocclusion filling are applied to obtain a complete depth image at each color camera (see Figure ~\ref{fig:view} – (b) VSRS).
+
+\section{Rendering}
+
+Rendering: Depth and color information from each color camera are propagated to the virtual view, then merged and filtered to produce the output image (see Figure ~\ref{fig:view} – (b) VSRS)
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\linewidth]{woman.jpg}
+\caption{Green area in enlarged rectangle on the right side of the image is the new region introduced in the scene whereas the black lines in the enlarged region on the left side of the image are cracks}
+\label{fig:view}
+\end{figure}
+
+\subsection{Results}
+
+We propose using a criterion based on the uniqueness constraint together with the analysis.
+be quest for novel and efficient 3D video representations and coding techniques in area of 3D television (3DTV) has recently revitalized the research in the area of intermediate view synthesis. In fact, emerging 3D display technologies, such as autostereoscopic displays.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\linewidth]{people1.jpg}
+\caption{(b) VSRS}
+\label{fig:view}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\linewidth]{people2.jpg}
+\caption{(b) VSRS}
+\label{fig:view}
+\end{figure}
+\clearpage
+\section{Move}
+
+According to the uniqueness principle corresponding image points are characterized by the bi-directional consistency described by relation (1), setting c"0. For a given sampling position pl in the left image, let dl be the estimated disparity, c(dl) the deviation obtained by applying (1), and E the set of vectors over the whole displacement "eld, for which the relations (1) can be de"ned. Using these conventions we de"ne.
+
+\begin{equation}
+z(p)={\frac{1}{K}}\sum \limits _{k=1}^{L} \sum \limits _{i,j=-N}^{N} \omega_k(u+i,v+i)z_k(u+i,v+i)
+\end{equation}
+
+The removal of ghost contours by warping is illustrated in Fig. 11. The advantage of this method is that only ghost contours are erased. However, we need an additional pass to find the high discontinuities. We now briefly explain how this is accomplished. The objective is to find background pixels that have a neighboring foreground pixel. In general, we have to compare every pixel with its eight surrounding neighbors to verify if there is a high discontinuity. However, it is sufficient to label a pixel as a ghost contour, if only one of its neighbors is a foreground pixel. So for every pixel, we check the following condition.
+
+\begin{equation}
+\sum \limits _{i=-1}^{1} \sum \limits_{j=-1}^{1}D(x+i,y+i)-9*D(x,y)>Td 
+\end{equation}
+
+The drawback is that the inpainted region becomes a low frequency patch, when the disoccluded region is very large. The last picture of Fig. 13 shows that blurring of foreground and background textures occurs when we do not consider depth information for inpainting. Our inpainting algorithm is based on a weighted interpolation from neighboring pixels that do contain texture values, which is specified.
+
+\begin{equation}
+P(u,v)=\frac{\sum_{N}^{i=1}d_{i}^{-2}*t_i}{\sum_{N}^{i=1}d_{i}^{-2}},
+\end{equation}
+
+where
+\newline O - is the disoccluded region,
+\newline N - represents the number of edge pixels at the background,
+\newline d - is the distance of P to the edge of the disoccluded region, 
+\newline t - is the texture value of an edge pixel.
+\section{Tables}
+
+Table 1 – Comparison in the running time of the 3D warping, occlusion removal, and DCBF steps
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{l|cr}
+Mode & Frame rate (in fps) & Time (in msec) \\\hline
+Sequenrial & 0.09 & 11 389.00 \\
+Parallel & 24.37 & 41.03  
+\end{tabular}
+\end{table}
+
+Table 2 – Coding statistics for two RD points of K
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{l|ccccr}
+ & Bitrate & PSNR & \% & Motion info. & Residuals\\
+ & [kbps] & [db] & SKIP & [bit/frame] & [bit/frame] \\\hline
+No DCR & 230.4 & 33.99 & 80.20 & 582.1 & 522.41 \\
+DCR (t=5) & 179.5 & 34.04 & 92.25 & 253.48 & 240.62  
+\end{tabular}
+\end{table}
+\clearpage
+
+
+
+\end{document}
